@@ -60,7 +60,11 @@
     <Compile Include="EF\ApplicationContext.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Article.cs" />
     <Compile Include="Entities\ClientProfile.cs" />
+    <Compile Include="Entities\Feedback.cs" />
+    <Compile Include="Entities\Project.cs" />
+    <Compile Include="Entities\ProjectType.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

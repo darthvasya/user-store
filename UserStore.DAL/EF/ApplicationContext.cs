@@ -9,5 +9,9 @@ namespace UserStore.DAL.EF
         public ApplicationContext(string conectionString) : base(conectionString) { }
 
         public DbSet<ClientProfile> ClientProfiles { get; set; }
+        public DbSet<Article> Articles { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectType> ProjectTypes { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
     }
 }
