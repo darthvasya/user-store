@@ -1,21 +1,57 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_LayoutContact.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-@if (User.IsInRole("admin"))
-{
-    <h2>admin!</h2>
-}
-<address>
-    
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+<div class="parallax head-window">
+    <h2>Наши контакты</h2>
+</div>
+
+<section class="contacts">
+    <div class="col-md-12 body">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Контакты</h2>
+            <p class="text">Немножко текста на тему того что звоните нам почаще ибо мы тут совсем скучаем по вам</p>
+            <p><span class="glyphicon glyphicon-earphone"></span> +375 29 806 18 23</p>
+            <p><span class="glyphicon glyphicon-earphone"></span> +375 29 806 18 23</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@systemengeniring.by</p>
+            <hr>
+        </div>
+    </div>
+</section>
+
+<section class="feedback">
+    <div class="col-md-12 body">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h2>Контактная форма</h2>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input name="name" type="text" class="form-control" placeholder="Имя" required />
+                    <p class="help-block">Введите Ваше имя</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" class="form-control" placeholder="E-mail" required />
+                    <p class="help-block">Введите Ваш электронный адресс</p>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Сообщение</label>
+                    <textarea name="comment" class="form-control" placeholder="Сообщение" required></textarea>
+                    <p class="help-block">Введите Ваше сообщение. В ближайшее время мы Вам ответим.</p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-info" value="Отправить" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+</section>

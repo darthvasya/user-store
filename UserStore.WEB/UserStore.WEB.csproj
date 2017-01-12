@@ -167,6 +167,79 @@
       <DependentUpon>UserStore4.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\articles-page.css" />
+    <Content Include="Content\css\contact-page.css" />
+    <Content Include="Content\css\index-page.css" />
+    <Content Include="Content\css\master.css" />
+    <Content Include="Content\images\1155-57314d0467928.jpg" />
+    <Content Include="Content\images\blank.gif" />
+    <Content Include="Content\images\checked.svg" />
+    <Content Include="Content\images\checked_poster_u12782.png" />
+    <Content Include="Content\images\dirty-industry-stack-factory.jpg" />
+    <Content Include="Content\images\email.svg" />
+    <Content Include="Content\images\email_poster_u8933.png" />
+    <Content Include="Content\images\fon.jpg" />
+    <Content Include="Content\images\fon2.jpg" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\man-people-space-desk.jpg" />
+    <Content Include="Content\images\pexels-photo %283%29.jpg" />
+    <Content Include="Content\images\pexels-photo %284%29.jpg" />
+    <Content Include="Content\images\pexels-photo %285%29.jpg" />
+    <Content Include="Content\images\pexels-photo-110469.jpg" />
+    <Content Include="Content\images\pexels-photo-165985.jpg" />
+    <Content Include="Content\images\pexels-photo-24257-ieu8735-fr.png" />
+    <Content Include="Content\images\pexels-photo-24257.jpg" />
+    <Content Include="Content\images\pexels-photo-26939-ieu8750-fr.png" />
+    <Content Include="Content\images\pexels-photo-26939.jpg" />
+    <Content Include="Content\images\pexels-photo-40120.jpg" />
+    <Content Include="Content\images\pexels-photo-57007.jpg" />
+    <Content Include="Content\images\pexels-photo-87383.jpg" />
+    <Content Include="Content\images\pexels-photo-ieu8732-fr.png" />
+    <Content Include="Content\images\pexels-photo.jpg" />
+    <Content Include="Content\images\phone-handset.svg" />
+    <Content Include="Content\images\phone-handset_poster_u8925.png" />
+    <Content Include="Content\images\services.jpg" />
+    <Content Include="Content\images\shutterstock_178188626.jpg" />
+    <Content Include="Content\images\smoke-chimney-industrial-29465.jpg" />
+    <Content Include="Content\images\tap %281%29.svg" />
+    <Content Include="Content\images\tap.svg" />
+    <Content Include="Content\images\tap_poster_u7574.png" />
+    <Content Include="Content\images\technology-computer-metal-industry-163150.jpg" />
+    <Content Include="Content\images\u11014-17-fs.png" />
+    <Content Include="Content\images\u11014-17-m.png" />
+    <Content Include="Content\images\u11014-17-r.png" />
+    <Content Include="Content\images\u11014-17.png" />
+    <Content Include="Content\images\u11233-17-fs.png" />
+    <Content Include="Content\images\u11233-17-m.png" />
+    <Content Include="Content\images\u11233-17-r.png" />
+    <Content Include="Content\images\u11233-17.png" />
+    <Content Include="Content\images\u11557-17-fs.png" />
+    <Content Include="Content\images\u11557-17-m.png" />
+    <Content Include="Content\images\u11557-17-r.png" />
+    <Content Include="Content\images\u11557-17.png" />
+    <Content Include="Content\images\u11676-17-fs.png" />
+    <Content Include="Content\images\u11676-17-m.png" />
+    <Content Include="Content\images\u11676-17-r.png" />
+    <Content Include="Content\images\u11676-17.png" />
+    <Content Include="Content\images\u12084-17-fs.png" />
+    <Content Include="Content\images\u12084-17-m.png" />
+    <Content Include="Content\images\u12084-17-r.png" />
+    <Content Include="Content\images\u12084-17.png" />
+    <Content Include="Content\images\u13010-17-fs.png" />
+    <Content Include="Content\images\u13010-17-m.png" />
+    <Content Include="Content\images\u13010-17-r.png" />
+    <Content Include="Content\images\u13010-17.png" />
+    <Content Include="Content\images\u8051-17-fs.png" />
+    <Content Include="Content\images\u8051-17-m.png" />
+    <Content Include="Content\images\u8051-17-r.png" />
+    <Content Include="Content\images\u8051-17.png" />
+    <Content Include="Content\images\water-kitchen-black-design.jpg" />
+    <Content Include="Content\images\waterback.jpg" />
+    <Content Include="Content\images\waterback2.jpg" />
+    <Content Include="Content\images\water_treatment_system.jpg" />
+    <Content Include="Content\images\wat_el.jpg" />
+    <Content Include="Content\images\безымянный.jpg" />
+    <Content Include="Content\images\рисунок11.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -215,6 +288,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Article\Article.cshtml" />
+    <Content Include="Views\Article\Articles.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutArticle.cshtml" />
+    <Content Include="Views\Shared\_LayoutContact.cshtml" />
+    <Content Include="Views\Shared\_LayoutIndex.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
