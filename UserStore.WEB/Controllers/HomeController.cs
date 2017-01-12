@@ -24,6 +24,11 @@ namespace UserStore.Controllers
             return View();
         }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
         [Authorize(Roles="admin")]
         public ActionResult About()
         {
