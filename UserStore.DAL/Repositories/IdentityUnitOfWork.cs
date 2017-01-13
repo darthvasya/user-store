@@ -16,6 +16,8 @@ namespace UserStore.DAL.Repositories
         private ApplicationRoleManager roleManager;
         private IClientManager clientManager;
 
+        private ArticleRepository articleRepository;
+
         public IdentityUnitOfWork(string connectionString)
         {
             db = new ApplicationContext(connectionString);
@@ -24,6 +26,7 @@ namespace UserStore.DAL.Repositories
             clientManager = new ClientManager(db);
         }
 
+        #region Identity
         public ApplicationUserManager UserManager
         {
             get { return userManager; }
@@ -43,7 +46,27 @@ namespace UserStore.DAL.Repositories
         {
             await db.SaveChangesAsync();
         }
+        #endregion
 
+        #region Data
+        public IRepository<Article> ArticleRepository
+        {
+            get
+            {
+                if (articleRepository == null)
+                    articleRepository = new ArticleRepository(db);
+                return articleRepository;
+            }
+        }
+
+        public void Save()
+        {
+            db.SaveChanges();
+        }
+        #endregion
+
+
+        #region Disposing
         public void Dispose()
         {
             Dispose(true);
@@ -60,9 +83,11 @@ namespace UserStore.DAL.Repositories
                     userManager.Dispose();
                     roleManager.Dispose();
                     clientManager.Dispose();
+                    db.Dispose();
                 }
                 this.disposed = true;
             }
         }
+        #endregion
     }
 }
